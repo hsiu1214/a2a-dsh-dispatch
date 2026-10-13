@@ -1,0 +1,30 @@
+{
+  "name": "DeepSeek Harness Bridge",
+  "description": "透過 A2A 協議接收任務，委派給本機 DeepSeek Harness (dsh) 執行並回傳結果。",
+  "version": "1.0.0",
+  "supportedInterfaces": [
+    {
+      "url": "http://127.0.0.1:8080/a2a",
+      "protocolBinding": "HTTP+JSON",
+      "protocolVersion": "1.0"
+    }
+  ],
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false
+  },
+  "defaultInputModes": ["text/plain"],
+  "defaultOutputModes": ["text/plain"],
+  "skills": [
+    {
+      "id": "general_coding",
+      "name": "General coding / agent task",
+      "description": "將自然語言任務交給 dsh 執行（編碼、重構、研究等）。",
+      "tags": ["coding", "agent", "deepseek"],
+      "examples": [
+        "重構 src/utils.py 的錯誤處理",
+        "寫一支讀取 CSV 的 Python 腳本"
+      ]
+    }
+  ]
+}

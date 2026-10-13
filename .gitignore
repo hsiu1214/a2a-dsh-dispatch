@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# A2A runtime state — may contain task prompts and dsh outputs
+.a2a_tasks.json
+.a2a_tasks.json.tmp
+
+# Local logs produced during dispatch
+*.log
+.server.log
+.client.log
+
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
